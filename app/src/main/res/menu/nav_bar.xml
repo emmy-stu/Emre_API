@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- This is my navigation bar that includes 3 functions that interacts with the MainActivity.-->
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:title="Logout"
         android:id="@+id/Navigation_logout"

@@ -35,7 +35,7 @@
         android:name="com.example.emre_api.ui.FragmentDetails"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" >
-
+<!-- This argument command contains how the adapter will link to the xml file just from the ID-->
         <argument
             android:name="name"
             app:argType="string"/>
