@@ -33,7 +33,7 @@ class DashboardViewModel @Inject constructor(
 
 ) : ViewModel() {
 
-    // MutableStateFlow to hold artwork entities -> values can change
+    // MutableStateFlow to hold language entities -> values can change
     // Starts of as empty list
     private val _languageEntities = MutableStateFlow<List<LanguageEntity>>(emptyList())
     val languageEntity: StateFlow<List<LanguageEntity>> = _languageEntities
@@ -58,6 +58,6 @@ class DashboardViewModel @Inject constructor(
             }
         } // End of Coroutine
 
-    } // End of fetchArtworks()
+    } // End of fetchLanguage()
 
 } // Class
