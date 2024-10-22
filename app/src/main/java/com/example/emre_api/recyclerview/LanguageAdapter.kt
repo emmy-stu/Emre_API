@@ -46,7 +46,7 @@ class LanguageAdapter(
 
         // Find the button in the item layout and set a click listener
         holder.itemView.findViewById<Button>(R.id.goToDetails).setOnClickListener {
-            navigationFunction(language) // Pass the clicked artwork to the lambda
+            navigationFunction(language) // Pass the clicked language to the lambda
         }
     }
 

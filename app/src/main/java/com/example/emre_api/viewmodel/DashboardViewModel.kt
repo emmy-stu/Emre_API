@@ -14,7 +14,7 @@ import javax.inject.Inject
 
 // Purpose:
 // - Handles business logic for the Dashboard
-// - Fetches artwork data using the API and stores it in a MutableStateFlow
+// - Fetches language data using the API and stores it in a MutableStateFlow
 // - Uses Hilt for dependency injection
 
 // Let Hilt know that this file will be Injected with dependencies
@@ -38,7 +38,7 @@ class DashboardViewModel @Inject constructor(
     private val _languageEntities = MutableStateFlow<List<LanguageEntity>>(emptyList())
     val languageEntity: StateFlow<List<LanguageEntity>> = _languageEntities
 
-    // Fetch artwork data from API
+    // Fetch language  data from API
     fun fetchLanguage() {
 
         // Coroutine

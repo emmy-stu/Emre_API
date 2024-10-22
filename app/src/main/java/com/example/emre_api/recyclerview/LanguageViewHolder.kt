@@ -9,7 +9,7 @@ import com.example.emre_api.data.LanguageEntity
 
 // Purpose:
 // - Holds references to the views for each RecyclerView item
-// - Binds artwork data to these views
+// - Binds language data to these views
 
 // ViewHolder class to hold references to views for each item
 class LanguageViewHolder(view: View) : RecyclerView.ViewHolder(view) {

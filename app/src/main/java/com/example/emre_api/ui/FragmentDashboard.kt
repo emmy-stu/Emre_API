@@ -77,7 +77,7 @@ class FragmentDashboard : Fragment() {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 dashboardViewModel.languageEntity.collect { language ->
                     languageAdapter.submitList(language)
-                    // submitList -> in  ArtAdapter
+                    // submitList -> in LanguageAdapter
                 }
             }
         }
