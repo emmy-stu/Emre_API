@@ -71,34 +71,44 @@
             app:layout_constraintTop_toBottomOf="@+id/speakers" />
 
         <TextView
-            android:id="@+id/details"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="128dp"
-            android:text="More details are available"
+            android:id="@+id/officialIn"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="148dp"
+            android:text="United States, United Kingdom, Canada, Australia"
             android:textAppearance="?attr/textAppearanceBodyMedium"
             android:textColor="#2B2F40"
             app:layout_constraintStart_toStartOf="@id/name"
             app:layout_constraintTop_toBottomOf="@id/name"
             tools:ignore="HardcodedText"
-            tools:text="More details are available" />
+            tools:text="United States, United Kingdom, Canada, Australia" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/goToDetails"
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="8dp"
             android:backgroundTint="#060A0B"
             android:text="Show Data"
             android:textColor="@color/white"
             app:cornerRadius="8dp"
-            app:layout_constraintBottom_toBottomOf="@id/details"
+            app:layout_constraintBottom_toBottomOf="@id/officialIn"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/details"
-            app:layout_constraintVertical_bias="0.965"
+            app:layout_constraintTop_toTopOf="@id/officialIn"
+            app:layout_constraintVertical_bias="1.0"
             app:rippleColor="@color/white"
             tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toTopOf="@+id/officialIn"
+            app:layout_constraintTop_toBottomOf="@+id/family"
+            tools:layout_editor_absoluteX="8dp"
+            tools:text="A West Germanic language that is the global lingua franca and the most widely spoken language in the world.&quot;" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </com.google.android.material.card.MaterialCardView>
