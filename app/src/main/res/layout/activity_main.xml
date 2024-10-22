@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#4D00BCD4"
+    tools:context="com.example.emre_api.MainActivity">
 
     <!-- NavHostFragment for navigation -->
     <androidx.fragment.app.FragmentContainerView
