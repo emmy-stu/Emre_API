@@ -2,8 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4D00BCD4"
     tools:context="com.example.emre_api.ui.FragmentDetails">
-
+<!-- My purpose was to load the API details of the code and unfortunately due to the complications i faced i couldn't complete it-->
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
