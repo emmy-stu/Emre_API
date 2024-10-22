@@ -10,7 +10,7 @@ import retrofit2.http.Header
 import retrofit2.http.POST
 
 // Purpose:
-// - Contains the 2 API Endpoints: @POST("footscray/auth") & @GET("dashboard/art")
+// - Contains the 2 API Endpoints: @POST("footscray/auth") & @GET("dashboard/languages")
 interface RestfulApiDevService {
 
     // POST
