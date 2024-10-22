@@ -1,5 +1,5 @@
-
 <?xml version="1.0" encoding="utf-8"?>
+<!-- In this file i have contained every element of the entities, from linking it to the adapter i managed to using the ID TO work with this XML file-->
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -102,7 +102,7 @@
             app:layout_constraintVertical_bias="1.0"
             app:rippleColor="@color/white"
             tools:ignore="HardcodedText" />
-
+<!-- This TextView is meant to be included in the details fragment but instead added it in this file-->
         <TextView
             android:id="@+id/description"
             android:layout_width="wrap_content"
