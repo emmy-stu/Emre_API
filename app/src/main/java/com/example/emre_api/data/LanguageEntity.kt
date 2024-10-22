@@ -7,7 +7,7 @@ import com.squareup.moshi.JsonClass
 @JsonClass(generateAdapter = true)
 
 // Entities list receive from the API keypass
-// They're all String except for year
+// They're all String except for officialIn and Speakers
 data class LanguageEntity(
     @Json(name = "name") val name: String,
     @Json(name = "family") val family: String,
