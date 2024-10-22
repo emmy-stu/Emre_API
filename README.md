@@ -18,4 +18,4 @@ How to Use AssignmentFinalv3:
 - Step 3: Click the code button.
 - Step 4: Either clone the repository or download the zip file to extract the device.
 - Step 5: Open the project in Android Studio
-- Step 6: Enjoy!
+- Step 6: Run then Enjoy!
