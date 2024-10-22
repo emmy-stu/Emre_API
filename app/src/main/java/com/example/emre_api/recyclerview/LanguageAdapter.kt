@@ -10,7 +10,7 @@ import com.example.emre_api.data.LanguageEntity
 import com.example.emre_api.recyclerview.LanguageViewHolder
 
 // Purpose:
-// - Adapter to handle the display of artwork data in a RecyclerView
+// - Adapter to handle the display of language data in a RecyclerView
 // - Responsible for creating ViewHolder instances and binding data to the RecyclerView
 
 // Implementations:
@@ -21,7 +21,7 @@ import com.example.emre_api.recyclerview.LanguageViewHolder
 // - ViewModel -> to manage data flow
 // - Set data in fragment
 
-// Adapter class to manage the artwork data
+// Adapter class to manage the languages data
 class LanguageAdapter(
     private var languageList: List<LanguageEntity> = emptyList(),
 
@@ -29,7 +29,7 @@ class LanguageAdapter(
 
     RecyclerView.Adapter<LanguageViewHolder>() {
 
-    // Creates new VideHolder
+    // Creates new ViewHolder
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LanguageViewHolder {
         // Using the item_layout_restful_api_service xml
         val view = LayoutInflater.from(parent.context)
@@ -39,7 +39,7 @@ class LanguageAdapter(
 
     // Binds the data to ViewHolder
     override fun onBindViewHolder(holder: LanguageViewHolder, position: Int) {
-        // Fetch the art item index
+        // Fetch the language item index
         val language = languageList[position]
         // Call bind to set the item data
         holder.bind(language)
@@ -55,7 +55,7 @@ class LanguageAdapter(
         return languageList.size
     }
 
-    // Update the list of artwork entities and notify the adapter
+    // Update the list of language entities and notify the adapter
     @SuppressLint("NotifyDataSetChanged")
     fun submitList(language: List<LanguageEntity>) {
         languageList = language
