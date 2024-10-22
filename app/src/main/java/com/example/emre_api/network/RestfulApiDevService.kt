@@ -19,11 +19,11 @@ interface RestfulApiDevService {
     suspend fun login(@Body request: LoginRequest): LoginResponse
 
     // GET
-    // This is to get the art data
-//    @GET("dashboard/languages")
-//    suspend fun getArt(
-//        @Header("Authorization") keypass: String
-//    ): ApiResponse
+    // This is to get the languages data
+    @GET("dashboard/languages")
+    suspend fun getLanguage(
+        @Header("Authorization") keypass: String
+    ): ApiResponse
     // Includes the keypass, and it returns ApiResponse
 }
 

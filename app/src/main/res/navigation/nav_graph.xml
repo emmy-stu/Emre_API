@@ -22,6 +22,7 @@
         android:name="com.example.emre_api.ui.FragmentDashboard"
         android:label="fragment_dashboard"
         tools:layout="@layout/fragment_dashboard" >
+
         <action
             android:id="@+id/action_dashboardFragment_to_detailsFragment"
             app:destination="@id/detailsFragment" />
@@ -34,6 +35,29 @@
         android:name="com.example.emre_api.ui.FragmentDetails"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" >
+
+        <argument
+            android:name="name"
+            app:argType="string"/>
+        <argument
+            android:name="family"
+            app:argType="string"/>
+        <argument
+            android:name="branch"
+            app:argType="string"/>
+        <argument
+            android:name="speakers"
+            app:argType="integer"/>
+        <argument
+            android:name="writingSystem"
+            app:argType="string"/>
+        <argument
+            android:name="officialIn"
+            app:argType="string"/>
+        <argument
+            android:name="description"
+            app:argType="string"/>
+
         <action
             android:id="@+id/action_detailsFragment_to_dashboardFragment"
             app:destination="@id/dashboardFragment" />

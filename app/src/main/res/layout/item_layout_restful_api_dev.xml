@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    style="?attr/materialCardViewElevatedStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:backgroundTint="#81673AB7">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="229dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="175dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:textColor="#2B2F40"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Writing System: Latin Alphabet  " />
+
+        <TextView
+            android:id="@+id/family"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="#2B2F40"
+            app:layout_constraintStart_toStartOf="@id/name"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            tools:text="Indo-European " />
+
+        <TextView
+            android:id="@+id/speakers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:textColor="#2B2F40"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.952"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Speakers: 1452000000" />
+
+        <TextView
+            android:id="@+id/branch"
+            android:layout_width="125dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Germanic "
+            android:textAlignment="viewEnd"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="#2B2F40"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/speakers" />
+
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="128dp"
+            android:text="More details are available"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="#2B2F40"
+            app:layout_constraintStart_toStartOf="@id/name"
+            app:layout_constraintTop_toBottomOf="@id/name"
+            tools:ignore="HardcodedText"
+            tools:text="More details are available" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/goToDetails"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#060A0B"
+            android:text="Show Data"
+            android:textColor="@color/white"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/details"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/details"
+            app:layout_constraintVertical_bias="0.965"
+            app:rippleColor="@color/white"
+            tools:ignore="HardcodedText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
