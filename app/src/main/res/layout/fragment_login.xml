@@ -5,7 +5,7 @@
     android:id="@+id/fragmentLogin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#4D00BCD4"
     tools:context="com.example.emre_api.MainActivity">
 
     <!-- Email Field -->
@@ -93,9 +93,6 @@
             android:textColorHint="#546E7A" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Register TextView -->
-
-    <!-- Forgot Password TextView -->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
