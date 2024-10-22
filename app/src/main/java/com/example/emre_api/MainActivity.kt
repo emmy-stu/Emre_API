@@ -15,6 +15,7 @@ import dagger.hilt.android.AndroidEntryPoint
 
 // Add this to ensure the app runs with DI
 // We need to add this to every activity or fragment that use Dependency Injection
+//The navigation bar is set up here and navigates through each page from here
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
