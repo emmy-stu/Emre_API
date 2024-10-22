@@ -19,9 +19,9 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
 // Purpose:
-// - Dashboard fragment to display a list of artworks using a RecyclerView
-// - Uses a ViewModel to fetch and observe the list of artworks
-// - Binds the artwork data to the RecyclerView using ArtAdapter
+// - Dashboard fragment to display a list of languages using a RecyclerView
+// - Uses a ViewModel to fetch and observe the list of languages
+// - Binds the languages data to the RecyclerView using LanguageAdapter
 
 // Enable Hilt injection
 @AndroidEntryPoint
@@ -48,7 +48,7 @@ class FragmentDashboard : Fragment() {
         // Lambda is like passing a parameter in Java
         val navigationFunctionLambda: (LanguageEntity) -> Unit = { language ->
 
-            // Use safeArgs to navigate to details fragment, passing the artwork data
+            // Use safeArgs to navigate to details fragment, passing the language data
             val action = FragmentDashboardDirections.actionDashboardFragmentToDetailsFragment(
                 name = language.name,
                 family = language.family,
@@ -66,13 +66,13 @@ class FragmentDashboard : Fragment() {
         // Initialize recyclerViews from the fragment_dashboard ID
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerView)
 
-        // initialized artAdapter and pass function navigate lambda when clicked
+        // initialized LanguageAdapter and pass function navigate lambda when clicked
         languageAdapter = LanguageAdapter(navigationFunction = navigationFunctionLambda)
 
-        // Connect ArtAdapter to RecyclerView to displays data
+        // Connect LanguageAdapter to RecyclerView to displays data
         recyclerView.adapter = languageAdapter
 
-        // Collect the artworkEntities flow and update RecyclerView
+        // Collect the languageEntities flow and update RecyclerView
         lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 dashboardViewModel.languageEntity.collect { language ->
@@ -82,7 +82,7 @@ class FragmentDashboard : Fragment() {
             }
         }
 
-        // Fetch the artworks when the fragment is created
+        // Fetch the languages when the fragment is created
         dashboardViewModel.fetchLanguage()
     }
 }
