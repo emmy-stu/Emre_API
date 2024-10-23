@@ -11,7 +11,7 @@ Dependencies that were used in the AssignmentFinalv3 Project:
 - Material Design 3 for UI components
 - OkHttp for HTTP logging
 
-How to Use AssignmentFinalv3:
+How to Use Emre_API:
 
 - Step 1: Open the GitHub link provided in the document. 
 - Step 2: Copy the link onto your browser. 
